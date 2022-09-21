@@ -21,6 +21,15 @@ router.post('/', async (req, res) => {
     }    
 })
 
+router.get("/:id", async (req, res) => {
+    try {
+      // send one person
+      res.json(await Albums.findById(req.params.id));
+    } catch (error) {
+      //send error
+      res.status(400).json(error);
+    }
+  })
 
 
 module.exports = router
