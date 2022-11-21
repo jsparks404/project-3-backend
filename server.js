@@ -37,7 +37,7 @@ app.use(morgan('dev'))
 app.use('/albums', albumsController)
 
 app.get('/', (req, res) => {
-    res.send('Oi, mate!')
+    res.send('Home')
 })
 
 
