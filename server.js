@@ -13,6 +13,7 @@ const app = express()
 // pull PORT from .env, give default value of 4000
 const mongoose = require('mongoose');
 const albumsController = require('./controllers/albums-controller')
+const artistsController = require('./controllers/artists-controller')
 
 
 
@@ -35,6 +36,7 @@ app.use(morgan('dev'))
 
 // all requests for endpoints that begin with '/people'
 app.use('/albums', albumsController)
+app.use('/artists', artistsController)
 
 app.get('/', (req, res) => {
     res.send('Home')

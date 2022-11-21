@@ -6,7 +6,6 @@ const ArtistsSchema = new mongoose.Schema({
     album: String,
     artist: String,
     year: String,
-    id: String,
     tracks: [String]
 }, {timestamps: true})
 

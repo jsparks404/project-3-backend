@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
 
 router.get("/:id", async (req, res) => {
     try {
-      // send one person
+      // send one artist
       res.json(await Artists.findById(req.params.id));
     } catch (error) {
       //send error
