@@ -1,3 +1,4 @@
 module.exports = {
-    Albums: require('./Albums')
+    Albums: require('./Artists'),
+    Artists: require('./Artists')
 }
